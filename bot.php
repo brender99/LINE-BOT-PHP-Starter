@@ -21,6 +21,7 @@ if (!is_null($events['events'])) {
 				'type' => 'text',
 				//'text' => '123'
                 'text' => $content
+
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
