@@ -54,7 +54,7 @@ if (!is_null($events['events'])) {
             // Build message to reply back
             $messages = [
                 'type' => 'text',
-                'text' => $event
+                'text' => $events
                 //'text' => 'Non Text'
                 //'text' => $event['message']['type']
             ];
