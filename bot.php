@@ -20,7 +20,7 @@ if (!is_null($events['events'])) {
 			$messages = [
 				'type' => 'text',
 				//'text' => '191'
-                'text' => $events
+                'text' => $event['type']
 
 			];
 
