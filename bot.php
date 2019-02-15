@@ -79,7 +79,8 @@ if (!is_null($events['events'])) {
 }
 
 $url = 'https://lorawan.free.beeceptor.com';
-$data = array('key1' => 'value1', 'key2' => 'value2');
+//$data = array('key1' => 'value1', 'key2' => 'value2');
+$data = $content;
 
 // use key 'http' even if you send the request to https://...
 $options = array(
