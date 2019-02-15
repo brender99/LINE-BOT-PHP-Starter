@@ -44,8 +44,7 @@ if (!is_null($events['events'])) {
 
 			echo $result . "\r\n";
 		}
-		else if($event['type'] == 'message'){ if($event['message']['type'] == 'location'){
-        {
+		else if ($event['type'] == 'message' && $event['message']['type'] == 'location') {
             // Get text sent
             //$text = $event['message']['text'];
             // Get replyToken
