@@ -44,7 +44,7 @@ if (!is_null($events['events'])) {
 
 			echo $result . "\r\n";
 		}
-		else
+		else if($event['type'] == 'message'){ if($event['message']['type'] == 'location'){
         {
             // Get text sent
             //$text = $event['message']['text'];
@@ -54,7 +54,7 @@ if (!is_null($events['events'])) {
             // Build message to reply back
             $messages = [
                 'type' => 'text',
-                'text' => $events
+                'text' => $event['message']['latitude']
                 //'text' => 'Non Text'
                 //'text' => $event['message']['type']
             ];
