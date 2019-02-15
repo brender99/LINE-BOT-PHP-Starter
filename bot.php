@@ -20,7 +20,7 @@ if (!is_null($events['events'])) {
 			$messages = [
 				'type' => 'text',
 				//'text' => '191'
-                'text' => $event['type']
+                'text' => $event['message']['type']
 
 			];
 
@@ -55,7 +55,7 @@ if (!is_null($events['events'])) {
             $messages = [
                 'type' => 'text',
                 //'text' => 'Non Text'
-                'text' => $event['type']
+                'text' => $event['message']['type']
             ];
 
             // Make a POST Request to Messaging API to reply to sender
