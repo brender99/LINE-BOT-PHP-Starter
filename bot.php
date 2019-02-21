@@ -16,11 +16,23 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
+			$reply = '';
+
+			if($text == 'hi' || $text = 'hello')
+            {
+                $reply = 'สวัสดีครับ';
+            }
+            else
+            {
+                $reply = 'What is' . $text;
+            }
+
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
+                'text' => $reply
 				//'text' => '191'
-                'text' => $event['message']['type']
+                //'text' => $event['message']['type']
 
 			];
 
