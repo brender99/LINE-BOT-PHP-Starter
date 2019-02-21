@@ -54,7 +54,7 @@ if (!is_null($events['events'])) {
             $messages = [
                 'type' => 'text',
                 'text' => $event['message']['latitude'] . ',' . $event['message']['longitude']
-                            . ' ที่อยู่ ,' . "\n" .  $event['message']['address']
+                        . "\n" . ' ที่อยู่ : ' .  $event['message']['address']
                 //'text' => 'Non Text'
                 //'text' => $event['message']['type']
             ];
