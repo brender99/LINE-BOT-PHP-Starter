@@ -18,7 +18,7 @@ if (!is_null($events['events'])) {
 
 			$reply = '';
 
-			if($text == 'hi' || $text = 'hello')
+			if($text == 'hi' || $text == 'hello')
             {
                 $reply = 'สวัสดีครับ';
             }
