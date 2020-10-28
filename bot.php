@@ -1,7 +1,7 @@
 <?php
 $access_token = '/Wwm2DAh0s7CLhm/o15DNx51IYHHa4sShW/k46CHfdm3Mc1eenakOvVIw/1z+mDfzaaG55en3d+h+fOEplDOoqHEhJ26rSiQTSYA9+/wrpAZ2OZmdLbeT2o4EfK84a2NhtrgPgEeU5udw9AUItPITwdB04t89/1O/w1cDnyilFU=';
 
-// Get POST body content -
+// Get POST body content XXX
 $content = file_get_contents('php://input');
 // Parse JSON
 $events = json_decode($content, true);
@@ -20,7 +20,7 @@ if (!is_null($events['events'])) {
 
 			if($text == 'Hi' || $text == 'hi' || $text == 'Hello' || $text == 'hello')
             {
-                $reply = 'สวัสดีครับ';
+                $reply = 'สวัสดีครับ1';
             }
             else
             {
