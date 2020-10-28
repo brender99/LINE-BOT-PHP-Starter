@@ -24,7 +24,7 @@ if (!is_null($events['events'])) {
             }
             else
             {
-                $reply = 'What is "' . $text . '"?';
+                $reply = 'What ss "' . $text . '"?';
             }
 
 			// Build message to reply back
